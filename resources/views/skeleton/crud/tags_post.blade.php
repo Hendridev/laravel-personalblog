@@ -1,3 +1,4 @@
+@auth
 @extends('layouts.app')
 @section('body')
     <div class="container">
@@ -46,3 +47,4 @@
 
     </script>
 @endsection
+@endauth

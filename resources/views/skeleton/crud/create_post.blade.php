@@ -1,3 +1,4 @@
+@auth
 @extends('layouts.app')
 @section('header')
 @endsection
@@ -33,3 +34,4 @@
       });
 </script>
 @endsection
+@endauth
