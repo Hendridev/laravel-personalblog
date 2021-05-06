@@ -38,7 +38,7 @@ class postController extends Controller
                 list($type, $data) = explode(',', $data);
                 $data = base64_decode($data);
                 $image_name = "/post_image/".time().$k.'.png';
-                $path = base_path().$image_name;
+                $path = public_path().$image_name;
                 file_put_contents($path, $data);
                 $img->removeAttribute('src');
                 $img->setAttribute('src', $image_name);

@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div style="text-align: justify;">
-                        {!!nl2br($dataPost->body)!!}
+                        {!!$dataPost->body!!}
                     </div>
                     </div>
                     @auth
@@ -57,7 +57,7 @@
                                 <a href="/posts/{{$item->slug}}" class="font-weight-bold text-dark">{{Str::limit($item->title,60,'...')}}</a>
                                 <hr>
                             </div>
-                            {{Str::limit($item->body,50,'...')}}
+                            {!!Str::limit($item->body,50,'...')!!}
                         </div>
                     </div>
                 @endforeach
